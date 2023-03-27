@@ -1,0 +1,97 @@
+@import "vhs_effect.css";
+
+@font-face {
+  font-family: MajorMonoDisplay;
+  src: local("MajorMonoDisplay-Regular"),
+  url(../fonts/Major_Mono_Display/MajorMonoDisplay-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Fragment_Mono;
+  src: local("Fragment_Mono"), url(../fonts/Fragment_Mono/FragmentMono-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Fragment_Mono_Italic;
+  src: local("Fragment_Mono"), url(../fonts/Fragment_Mono/FragmentMono-Italic.ttf) format("truetype");
+  font-weight: 400;
+}
+
+:root {
+  --color-primary: #ffe371;
+  --color-tertiary: #3bd1ff;
+  --color-quaternary: #ff6f3a;
+  --color-grey-base: #383838;
+  --color-grey-light: #525252;
+
+  font-family: Fragment_Mono, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+
+  /*color: #0f0f0f;*/
+  /*background-color: #f6f6f6;*/
+  color: var(--color-primary);
+  background-color: var(--color-grey-base);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#app {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+* {
+  color: var(--color-primary);
+  margin: 0;
+  padding: 0;
+}
+
+h1, strong {
+  font-family: MajorMonoDisplay, sans-serif;
+}
+
+em {
+  color: var(--color-quaternary);
+  font-style: normal;
+}
+
+button {
+  margin: 0;
+  padding: 0.5rem;
+  background-color: var(--color-grey-base);
+  color: var(--color-primary);
+  text-align: start;
+  border:none;
+  font-size: 1rem;
+}
+
+*:focus, *:focus > * {
+  outline: none;
+  color: var(--color-tertiary);
+  border-color: var(--color-tertiary);
+}
+
+
+input {
+  background-color: var(--color-grey-light);
+  /*padding: 0.5rem;*/
+  border: 1px solid var(--color-grey-light);
+  text-align: end;
+  font-size: 1rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-quaternary);
+  opacity: 1; /* Firefox */
+  font-size: 1rem;
+  vertical-align: center;
+}
